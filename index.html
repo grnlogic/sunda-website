@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="su">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyunda - Diajar Basa Sunda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader"></div>
+        <p>Nunggu sakedap...</p>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="Nyunda Logo">
+                <h1>Nyunda</h1>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#beranda" class="active">Beranda</a></li>
+                <li><a href="#materi">Materi</a></li>
+                <li><a href="#kosakata">Kosakata</a></li>
+                <li><a href="#latihan">Latihan</a></li>
+                <li><a href="#games">Kaulinan</a></li>
+                <li><a href="#aksara">Aksara</a></li>
+                <li><a href="#forum">Forum</a></li>
+                <li><a href="#profile" class="profile-btn"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="beranda" class="hero">
+            <div class="hero-content">
+                <h1 class="animate-title">Wilujeng Sumping di <span>Nyunda</span></h1>
+                <p class="animate-subtitle">Diajar basa Sunda janten gampil sareng pikaresepeun</p>
+                <div class="hero-buttons">
+                    <a href="#materi" class="btn primary-btn">Mulai Diajar</a>
+                    <a href="#about" class="btn secondary-btn">Tentang Kami</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/hero-image.png" alt="Belajar Bahasa Sunda">
+            </div>
+        </section>
+
+        <!-- Daily Word Section -->
+        <section id="kosakata" class="daily-word">
+            <div class="section-header">
+                <h2>Kecap Poé Ieu</h2>
+                <p>Kata Hari Ini</p>
+            </div>
+            <div class="word-card">
+                <div class="word-front">
+                    <h3 id="daily-word">Someah</h3>
+                    <p class="pronunciation">/so·me·ah/</p>
+                    <button class="flip-btn" id="flip-word-btn">Lihat Arti</button>
+                </div>
+                <div class="word-back">
+                    <h3>Ramah</h3>
+                    <p class="example">Contoh: "Urang Sunda mah <strong>someah</strong> ka semah."</p>
+                    <p class="translation">Artinya: "Orang Sunda itu ramah kepada tamu."</p>
+                    <button class="audio-btn" id="play-audio-btn"><i class="fas fa-volume-up"></i> Dengekeun</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Material Section -->
+        <section id="materi" class="materials">
+            <div class="section-header">
+                <h2>Materi Pangajaran</h2>
+                <p>Pilih tingkatan kelas anjeun</p>
+            </div>
+            <div class="grade-selector">
+                <button class="grade-btn active" data-grade="10">Kelas X</button>
+                <button class="grade-btn" data-grade="11">Kelas XI</button>
+                <button class="grade-btn" data-grade="12">Kelas XII</button>
+            </div>
+            <div class="material-categories">
+                <div class="category-card" data-category="ngabasa">
+                    <div class="category-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Ngabasa</h3>
+                    <p>Kaidah basa Sunda, éjahan, jeung paguneman</p>
+                    <a href="#" class="category-link">Tingali <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="category-card" data-category="sastra">
+                    <div class="category-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Sastra Sunda</h3>
+                    <p>Sajak, carita pondok, wawacan, pupuh, jsb.</p>
+                    <a href="#" class="category-link">Tingali <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="category-card" data-category="budaya">
+                    <div class="category-icon">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <h3>Kabudayaan Sunda</h3>
+                    <p>Tradisi, pakéan adat, kadaharan, seni, jsb.</p>
+                    <a href="#" class="category-link">Tingali <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Exercises Section -->
+        <section id="latihan" class="exercises">
+            <div class="section-header">
+                <h2>Latihan Interaktif</h2>
+                <p>Uji kamampuh anjeun</p>
+            </div>
+            <div class="exercise-types">
+                <div class="exercise-card">
+                    <img src="img/quiz-icon.png" alt="Pilihan Ganda">
+                    <h3>Pilihan Ganda</h3>
+                    <p>Pilih jawaban anu bener tina sababaraha pilihan</p>
+                    <button class="btn exercise-btn" data-exercise="multiple-choice">Mulai</button>
+                </div>
+                <div class="exercise-card">
+                    <img src="img/matching-icon.png" alt="Jodohan Kata">
+                    <h3>Jodohan Kecap</h3>
+                    <p>Jodokeun kecap-kecap Sunda jeung hartina</p>
+                    <button class="btn exercise-btn" data-exercise="matching">Mulai</button>
+                </div>
+                <div class="exercise-card">
+                    <img src="img/sentence-icon.png" alt="Susun Kalimat">
+                    <h3>Susun Kalimah</h3>
+                    <p>Susun kecap-kecap jadi kalimah anu bener</p>
+                    <button class="btn exercise-btn" data-exercise="sentence">Mulai</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mini Games Section -->
+        <section id="games" class="games">
+            <div class="section-header">
+                <h2>Kaulinan Edukatif</h2>
+                <p>Diajar bari ulin</p>
+            </div>
+            <div class="games-container">
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="img/word-guess.png" alt="Tebak Kata">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Tebak Kecap</h3>
+                        <p>Tebak kecap Sunda tina hartina</p>
+                        <button class="btn game-btn" data-game="word-guess">Ulin</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="img/sentence-builder.png" alt="Susun Kalimat">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Susun Kalimah</h3>
+                        <p>Susun kecap acak jadi kalimah nu bener</p>
+                        <button class="btn game-btn" data-game="sentence-builder">Ulin</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="img/culture-quiz.png" alt="Kuis Budaya">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Kuis Budaya</h3>
+                        <p>Tebak alat musik, pakéan, tarian, jsb.</p>
+                        <button class="btn game-btn" data-game="culture-quiz">Ulin</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aksara Sunda Section -->
+        <section id="aksara" class="aksara-section">
+            <div class="section-header">
+                <h2>Aksara Sunda</h2>
+                <p>Diajar maca jeung nulis aksara Sunda</p>
+            </div>
+            <div class="aksara-container">
+                <div class="aksara-interactive">
+                    <div class="aksara-input">
+                        <input type="text" id="latin-input" placeholder="Ketik huruf latin di sini...">
+                        <button class="btn convert-btn" id="convert-btn">Konversi</button>
+                    </div>
+                    <div class="aksara-output">
+                        <div class="output-label">Hasil Aksara Sunda:</div>
+                        <div class="aksara-result" id="aksara-result">
+                            <!-- Aksara result will appear here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="aksara-learn">
+                    <h3>Dasar Aksara Sunda</h3>
+                    <div class="aksara-grid" id="aksara-grid">
+                        <!-- Aksara characters will be populated here by JavaScript -->
+                    </div>
+                    <a href="#" class="learn-more-link">Diajar leuwih jero <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Section -->
+        <section id="progress" class="progress-section">
+            <div class="section-header">
+                <h2>Kamajuan Diajar</h2>
+                <p>Tingal kamajuan diajar anjeun</p>
+            </div>
+            <div class="progress-container">
+                <div class="progress-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="stat-value">12</div>
+                        <div class="stat-label">Materi Réngsé</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-gamepad"></i></div>
+                        <div class="stat-value">8</div>
+                        <div class="stat-label">Kaulinan Réngsé</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-medal"></i></div>
+                        <div class="stat-value">5</div>
+                        <div class="stat-label">Lencana</div>
+                    </div>
+                </div>
+                <div class="progress-chart">
+                    <h3>Skor Latihan Terkini</h3>
+                    <canvas id="progress-chart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forum Section -->
+        <section id="forum" class="forum-section">
+            <div class="section-header">
+                <h2>Forum Diskusi</h2>
+                <p>Diskusi sareng siswa séjén</p>
+            </div>
+            <div class="forum-container">
+                <div class="forum-header">
+                    <div class="forum-search">
+                        <input type="text" placeholder="Pilarian...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <button class="btn new-topic-btn">Topik Anyar</button>
+                </div>
+                <div class="forum-topics">
+                    <div class="topic-card">
+                        <div class="topic-author">
+                            <img src="img/avatar1.png" alt="Avatar">
+                            <span>Asep Sunandar</span>
+                        </div>
+                        <div class="topic-content">
+                            <h3>Tanya tentang Pupuh Kinanti</h3>
+                            <p>Kumaha carana ngabédakeun Pupuh Kinanti jeung Pupuh Sinom?</p>
+                        </div>
+                        <div class="topic-stats">
+                            <div class="stat"><i class="fas fa-comment"></i> 5</div>
+                            <div class="stat"><i class="fas fa-eye"></i> 28</div>
+                            <div class="stat"><i class="fas fa-clock"></i> 2j yang lalu</div>
+                        </div>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-author">
+                            <img src="img/avatar2.png" alt="Avatar">
+                            <span>Nenden Aryani</span>
+                        </div>
+                        <div class="topic-content">
+                            <h3>Harti kecap "Sirung"</h3>
+                            <p>Naon hartina kecap "Sirung" dina basa Sunda? Hatur nuhun.</p>
+                        </div>
+                        <div class="topic-stats">
+                            <div class="stat"><i class="fas fa-comment"></i> 12</div>
+                            <div class="stat"><i class="fas fa-eye"></i> 45</div>
+                            <div class="stat"><i class="fas fa-clock"></i> 1h yang lalu</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forum-pagination">
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn"><i class="fas fa-ellipsis-h"></i></button>
+                    <button class="pagination-btn">8</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audio & Video Section -->
+        <section id="media" class="media-section">
+            <div class="section-header">
+                <h2>Audio & Video</h2>
+                <p>Diajar tina média audio jeung video</p>
+            </div>
+            <div class="media-tabs">
+                <button class="tab-btn active" data-tab="audio">Audio</button>
+                <button class="tab-btn" data-tab="video">Video</button>
+            </div>
+            <div class="media-content active" id="audio-content">
+                <div class="audio-cards">
+                    <div class="audio-card">
+                        <div class="audio-info">
+                            <h3>Carita Sasakala Tangkuban Parahu</h3>
+                            <p>Dongeng tradisional Sunda</p>
+                        </div>
+                        <div class="audio-player">
+                            <audio controls>
+                                <source src="audio/sasakala-tangkuban-parahu.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-card">
+                        <div class="audio-info">
+                            <h3>Pupuh Kinanti</h3>
+                            <p>Tembang Sunda tradisional</p>
+                        </div>
+                        <div class="audio-player">
+                            <audio controls>
+                                <source src="audio/pupuh-kinanti.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="media-content" id="video-content">
+                <div class="video-cards">
+                    <div class="video-card">
+                        <div class="video-player">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Kabudayaan Sunda: Angklung jeung Gamelan</h3>
+                            <p>Alat musik tradisional Sunda</p>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-player">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Tari Jaipongan</h3>
+                            <p>Tarian tradisional Sunda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Nyunda Logo">
+                <h2>Nyunda</h2>
+                <p>Diajar Basa Sunda janten gampil sareng pikaresepeun</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h3>Menu Utama</h3>
+                    <ul>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#materi">Materi</a></li>
+                        <li><a href="#kosakata">Kosakata</a></li>
+                        <li><a href="#latihan">Latihan</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h3>Fitur</h3>
+                    <ul>
+                        <li><a href="#games">Kaulinan</a></li>
+                        <li><a href="#aksara">Aksara</a></li>
+                        <li><a href="#forum">Forum</a></li>
+                        <li><a href="#media">Audio & Video</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h3>Kontak</h3>
+                    <ul>
+                        <li><a href="mailto:info@nyunda.com">info@nyunda.com</a></li>
+                        <li><a href="tel:+6282123456789">+62 821-2345-6789</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Nyunda - Hak Cipta Ditangtayungan</p>
+        </div>
+    </footer>
+
+    <!-- Game Modal -->
+    <div class="modal" id="game-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 id="game-title">Judul Game</h2>
+            </div>
+            <div class="modal-body" id="game-container">
+                <!-- Game content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/games.js"></script>
+</body>
+</html>
